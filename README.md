@@ -53,6 +53,17 @@ tokenizer = ElectraTokenizer.from_pretrained("snunlp/KR-ELECTRA-discriminator")
 
 We used and slightly edited the finetuning codes from [KoELECTRA](https://github.com/monologg/KoELECTRA), with additionally adjusted hyperparameters. You can download the codes and config files that we used for our model. 
 
+```python
+python3 run_seq_cls.py --task nsmc --config_file kr-electra.json
+python3 run_seq_cls.py --task kornli --config_file kr-electra.json
+python3 run_seq_cls.py --task paws --config_file kr-electra.json
+python3 run_seq_cls.py --task question-pair --config_file kr-electra.json
+python3 run_seq_cls.py --task korsts --config_file kr-electra.json
+python3 run_seq_cls.py --task korsts --config_file kr-electra.json
+python3 run_ner.py --task naver-ner --config_file kr-electra.json
+python3 run_squad.py --task korquad --config_file kr-electra.json
+```
+
 
 #### Experimental Results
 

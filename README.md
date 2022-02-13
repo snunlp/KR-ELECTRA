@@ -32,6 +32,7 @@ We followed the training parameters of the base-scale model of [ELECTRA](https:/
 #### Vocabulary
 
 vocab size 30,000
+
 We used morpheme-based unit tokens for our vocabulary based on the [Mecab-Ko](https://bitbucket.org/eunjeon/mecab-ko-dic/src/master/) morpheme analyzer.
 
 
